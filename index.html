@@ -7,6 +7,9 @@
     <link href="/img/favicon.ico.png" rel="shortcut icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -30,15 +33,17 @@
   
     <!--START INTRO-->
   <div>
-    <div><h1>Hi, I'm J.<br><span>A UI/UX/Frontend Designer, from Sydney.</span></h1>
-        <p>I am an analytical creative who is inspired by all forms of design and beauty and is driven by a passion of service to others. This desire has lead me to want to develop wonderfully crafted digital experiences for users, that are not only intuitive and innovative but also beautiful.
+    <div id="#hero"></div> <h1 id="heading">Hi, I'm J.<br><span>A UI/UX/Frontend Designer, from Sydney.</span></h1>
+        <p>I am an analytical creative who is inspired by all forms of design and beauty and is driven by a passion of service to others. 
+        </p>  
+        <p>This desire has lead me to want to develop wonderfully crafted digital experiences for users, that are not only intuitive and innovative but also beautiful.
         </p>
     </div>
-  </div>
+
   <!--END INTRO-->
 
   <div>
-    <div><h2>My Projects</h2>
+    <div id="#work"><h2>My Projects</h2>
     </div>
       <!--START PROJECT 1-->
       <div>
@@ -57,10 +62,12 @@
                 We undertook both the UX and UI design, using Figma and Mockup software, as well as, Lyssna (formerly Usability Hub), over a two week period.
               </p>
               <p>We started off by developing user stories and flows based on the essential needs of our users. 
-                We then went on to produce low fidelity digital sketches, as well as, mid and high fidelity wireframes using Mockup and Figma to create a responsive mobile web app.
-                We capped it all off by creating and implementing our brand guidelines and undertaking both usability and preference testing, along with iteration and reflection, to ensure a valuable digital experience for the end user.
+              </p>  
+              <p>From here we produced our low fidelity digital sketches, using Mockup, as well as, our mid and high fidelity wireframes with Figma, to create a responsive mobile web app.
               </p>
-              <a href="farm-to-table.html">Read more</a>
+              <p>We capped it all off by creating and implementing our brand guidelines and undertaking both usability and preference testing, along with iteration and reflection, to ensure a valuable digital experience for the end user.
+              </p>
+              <a href="farm-to-table.html" class="button">Read more</a>
           </div>
       </div>
       <!--END PROJECT 1-->
@@ -82,10 +89,12 @@
             Both the UX and UI were undertaken to create our native app, using Figma for prototyping, over a three week timeline.
           </p>
           <p>Firstly, we performed a competitive analysis of two apps to determine our place in the market and define our target users.
-            We then went on to create intuitive user flows which allowed us to develop low, mid and an initial set of high fidelity wireframes for both our iOS and Android screens. 
-            After an invaluable round of user testing, we then refined our screens in order to develop our final native prototypes.
+          </p>  
+          <p>We then went on to create intuitive user flows which allowed us to develop low, mid and an initial set of high fidelity wireframes for both our iOS and Android screens. 
+          </p>  
+          <p>After an invaluable round of user testing, we then refined our design in order to develop our final native prototypes.
           </p>
-          <a href="">Read more</a>
+          <a href="" class="button">Read more</a>
         </div>
       </div>
       <!--END PROJECT 2-->
@@ -103,18 +112,22 @@
           Nourish Ninja is a responsive recipe web app that was developed to aid healthy cooking enthusiasts.
         </p>
         <p>
-          The UX and UI for this app were performed over an eleven week time frame, utilising both Figma and Prott software.
+          The UX and UI for this app were performed over an eleven week time frame, utilising both Figma, Miro and Prott software.
         </p>
-        <p>We undertook a SWOT analysis of two competitor apps and performed user research to determine our target users. From our research, we were then able to define the key frustrations and needs of our users.
-          We were then able to define three invaluable user personas. 
-          Following on from that, we developed our minimum viable product to ensure a simple and intuitive user experience. We did this by crafting a list of essential jobs to be done for our users.
-          This lead us to our streamlined user flows.
-          We performed rapid paper prototyping with a crazy 8s exercise to create our low fidelity wireframes.
-          We went on to create mid and high fidelity wireframes and then a responsive design for both tablets and desktop devices.
-          Usability testing both early on in the design and at the end helped inform our final UI design.
-          Iteration and reflection were again invaluable processes for us in this project.
+        <p>We undertook a SWOT analysis of two competitor apps and performed user research to determine our target users, as well as, their key frustrations and needs.
+          From this, we developed three invaluable user personas.
         </p>
-        <a href="">Read more</a>
+        <p>We then went on to define our minimum viable product to ensure an intuitive user experience. We did this by crafting a list of essential jobs to be done,
+          which lead us to streamlined user flows.
+        </p>
+        <p>We performed rapid paper prototyping with a crazy 8s exercise to develop our low fidelity wireframes.
+        </p>
+        <p>Following on from this, we created mid and high fidelity wireframes and a responsive design for both tablets and desktop devices.
+        </p>
+        <p>Usability testing both early on in the design and at the end helped inform our final UI design.
+          Both iteration and reflection were once again invaluable for this project.
+        </p>
+        <a href="" class="button">Read more</a>
       </div>
     </div>
     <!--END PROJECT 3-->
@@ -123,7 +136,7 @@
       <div>
         <picture>
           <source srcset="img/groovify/groovify-thumb2@1x.png" media="(max-width:767px)">
-          <img src="img/groovify/groovify-thumb 2@2x.png" alt="Vinyl record mobile device screens">
+          <img src="img/groovify/groovify-thumb2@2x.png" alt="Vinyl record mobile device screens">
         </picture>
       </div>
       <div>
@@ -134,11 +147,13 @@
         <p>
           We developed the UX/UI design for this app over a five week period using Figma and Mockup.
         </p>
-        <p>Starting with a competitive analysis of two app's design principles and patterns, we were able to develop our initial round of low fidelity wireframes, once we had highlighted the user journey.
-          We then went on to create our high fidelity wireframes. 
-          Once we had crafted our style guide for the app, we were then able to refine our final UI design.
+        <p>Starting with a competitive analysis of two app's design principles and patterns and once we had highlighted the user journey, we were able to develop our initial round of low fidelity wireframes.
+        </p>  
+        <p>We then went on to create our high fidelity wireframes. 
         </p>
-        <a href="">Read more</a>
+        <p>Once we had crafted our style guide for the app, we were able to refine our final UI design.
+        </p>
+        <a href="" class="button">Read more</a>
       </div>
     </div>
   <!--END PROJECT 4-->
@@ -150,11 +165,11 @@
     <div>
       <h2>Get in Touch</h2>
       <p>
-        Do you like my work and want to discuss opportunities? Please get in touch. Call <a href="tel:+424658647">here</a> or Skype me <a href="skype:hello.careerfoundry">here</a>. Prefer sending an email?
+        Would you like to collaborate? Please get in touch. Call <a href="tel:+424658647">here</a> or Skype me <a href="skype:hello.careerfoundry">here</a>. Prefer sending an email?
       </p>
     </div>
     <div>
-        <a href="mailto:jarusha.nolan@gmail.com">Email me</a>
+        <a href="mailto:jarusha.nolan@gmail.com" class="button contact">Email me</a>
     </div>
       <ul>
         <li><a href="https://www.linkedin.com/in/jarusha-nolan-346071103/"  target="_blank">
