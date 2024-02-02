@@ -4,5 +4,113 @@ Primary Colour (Teal): #1AA1C7 or RGB (26, 161, 199) or RGBa (26, 161, 199, 0.8)
 Secondary Colour (Dark Mauve): #AF55D8 or RGB (175, 85, 216);
 Charcoal (Main Text/P): #595959;
 Light Grey (Accent Heading/Body Colour): #757575;
+Dark Teal (Visited Hyperlinks): #15809E;
+Darker Mauve (Active Hyperlinks): #9F33D1;
 */
+body {
+  background-color: white #fff;
+  font-family: 'Roboto Flex', sans-serif; /* use Roboto Flex if available, otherwise use a sans serif font */
+  font-size: 16px; /* sets the font size to 16px */
+  font-weight: 300; /* sets font weight to 300 */
+  line-height: 1.6; /* sets the line height to 1.6 * the font size */
+  color: #595959;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+img {
+  width: 100%; /* sets the image width to 100%, so imgs scale properly */
+}
+
+h1#heading {
+  background-color: rgb(222, 193, 236, 0.36);
+  color: black;
+}
+
+a {
+  color: #1aa1c7;
+  text-decoration: none; /* No underlining */
+}
+
+a:visited { /* visited link */
+  color: #1aa1c7;
+}
+
+a:hover,
+a:focus {
+  color: #af55d8;
+  text-decoration: underline; /* Underlining when hovering over a link or going over it with your keyboard */
+}
+
+a:active { /* selected link */
+  color: #9f33d1;
+}
+
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #1aa1c7;
+  color: #fff; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #595959; /* width of the border, type, color */
+  transition: 0.2s;
+  opacity: 0.9;
+}
+
+.button:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+.button:active {
+  color: #9f33d1;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #1aa1c7;
+  text-transform: uppercase;
+  border: 2px solid #1aa1c7;
+}
+
+.button.contact:hover {
+  background-color: #1aa1c7;
+  color: #fff;
+}
+
+.button.contact:active {
+  color: #9f33d1;
+}
 
