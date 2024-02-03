@@ -58,6 +58,16 @@ h1#heading {
   color: black;
 }
 
+.logo {
+  width: 90px;
+  height: 50px;
+}
+
+.profile-pic {
+  height: 500;
+  width: 300;
+}
+
 a {
   color: #1aa1c7;
   text-decoration: none; /* No underlining */
@@ -96,6 +106,10 @@ a:active { /* selected link */
 
 .button:active {
   color: #9f33d1;
+}
+
+.button:visited {
+  color: black;
 }
 
 .button.contact {
