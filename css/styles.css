@@ -7,6 +7,21 @@ Light Grey (Accent Heading/Body Colour): #757575;
 Dark Teal (Visited Hyperlinks): #15809E;
 Darker Mauve (Active Hyperlinks): #9F33D1;
 */
+
+header {
+  background-color: rgb(26, 161, 199, 0.27);
+  padding: 35px 0;
+  margin: 10px;
+  border-bottom: 3px solid #4a4a4a;
+  text-align: center;
+  position: fixed;
+  width: 100;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: white #fff;
   font-family: 'Roboto Flex', sans-serif; /* use Roboto Flex if available, otherwise use a sans serif font */
@@ -14,6 +29,10 @@ body {
   font-weight: 300; /* sets font weight to 300 */
   line-height: 1.6; /* sets the line height to 1.6 * the font size */
   color: #595959;
+}
+
+main {
+  padding-top: 133px;
 }
 
 h1,
@@ -54,13 +73,13 @@ img {
 }
 
 h1#heading {
-  background-color: rgb(222, 193, 236, 0.36);
   color: black;
 }
 
 .logo {
   width: 90px;
   height: 50px;
+  max-width: 250px;
 }
 
 .profile-pic {
@@ -126,5 +145,82 @@ a:active { /* selected link */
 
 .button.contact:active {
   color: #9f33d1;
+}
+
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px;
+  color: #595959;
+}
+
+#hero h1 {
+  text-align: center; /* Centers text */
+}
+
+.center {
+  text-align: center;
+}
+
+#header header {
+  text-align: center;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+  width: 100;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+nav > ul > li > a:visited {
+  color: #1aa1c7;
+}
+
+nav > ul > li > a:hover,
+a:focus {
+  color: #af55d8;
+}
+
+nav > ul > li > a:active {
+  color: #9f33d1;
+}
+
+#hero {
+  background-color: rgb(222, 193, 236, 0.36);
+  margin: 10px;
+  padding: 20 0;
+  display: inline-block;
+  width: 100;
+}
+
+.css-box-shadow {
+  /* start ------------ */
+  width: [object Object]px;
+  height: [object Object]px;
+  background: #f8f8f8;
+  border: solid #bdbdbd 1px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
 }
 
