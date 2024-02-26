@@ -243,6 +243,10 @@ nav > ul > li > a:active {
   .col-md-6 {
     width: 50%;
   }
+
+  #about-page h3 {
+    margin-top: 0;
+  }
 }
 
 @media screen and (min-width: 1024px) {
