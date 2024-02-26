@@ -25,14 +25,14 @@ header {
 body {
   background-color: white #fff;
   font-family: 'Roboto Flex', sans-serif; /* use Roboto Flex if available, otherwise use a sans serif font */
-  font-size: 16px; /* sets the font size to 16px */
+  font-size: 18px; /* sets the font size to 16px */
   font-weight: 300; /* sets font weight to 300 */
   line-height: 1.6; /* sets the line height to 1.6 * the font size */
   color: #595959;
 }
 
 main {
-  padding-top: 133px;
+  padding-top: 99px;
 }
 
 h1,
@@ -63,7 +63,7 @@ h4 {
 }
 
 p {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 1.8;
 }
@@ -213,6 +213,10 @@ nav > ul > li > a:active {
   width: 100;
 }
 
+#hero span {
+  display: block;
+}
+
 .css-box-shadow {
   /* start ------------ */
   width: [object Object]px;
@@ -224,12 +228,37 @@ nav > ul > li > a:active {
   -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
 }
 
-@media screen and (min-width: 640px) {
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 1024px) {
 }
 
 @media screen and (min-width: 1440px) {
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 0 10px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
