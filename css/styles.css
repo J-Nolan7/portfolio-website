@@ -15,7 +15,7 @@ header {
   border-bottom: 3px solid #4a4a4a;
   text-align: center;
   position: fixed;
-  width: 100;
+  width: 100%;
 }
 
 * {
@@ -23,7 +23,7 @@ header {
 }
 
 body {
-  background-color: white #fff;
+  background-color: white;
   font-family: 'Roboto Flex', sans-serif; /* use Roboto Flex if available, otherwise use a sans serif font */
   font-size: 18px; /* sets the font size to 16px */
   font-weight: 300; /* sets font weight to 300 */
@@ -87,6 +87,7 @@ h1#heading {
   width: 300;
 }
 
+/* links */
 a {
   color: #1aa1c7;
   text-decoration: none; /* No underlining */
@@ -106,6 +107,8 @@ a:active { /* selected link */
   color: #9f33d1;
 }
 
+/* buttons */
+
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #1aa1c7;
@@ -114,8 +117,8 @@ a:active { /* selected link */
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #595959; /* width of the border, type, color */
-  transition: 0.2s;
-  opacity: 0.9;
+  opacity: 0.9; /* check if needed??? */
+  transition: 0.2s opacity;
 }
 
 .button:hover {
@@ -208,9 +211,9 @@ nav > ul > li > a:active {
 #hero {
   background-color: rgb(222, 193, 236, 0.36);
   margin: 10px;
-  padding: 20 0;
+  padding: 20px 0;
   display: inline-block;
-  width: 100;
+  width: 100%;
 }
 
 #hero span {
@@ -227,6 +230,8 @@ nav > ul > li > a:active {
   -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
 }
+
+/* media queries */
 
 @media only screen and (min-width: 640px) {
   header {
@@ -250,9 +255,19 @@ nav > ul > li > a:active {
 }
 
 @media screen and (min-width: 1024px) {
-}
+  .col-lg-7 {
+    width: 58.33%;
+  }
 
-@media screen and (min-width: 1440px) {
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 [class*="col-"] {
@@ -264,5 +279,88 @@ nav > ul > li > a:active {
   content: "";
   clear: both;
   display: table;
+}
+
+transition: { 
+  [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
+}
+
+#about-picture {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+#animation {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(356px, 48px);}
+}
+
+.cloud-back {
+  animation: 30s cloud-move-reverse infinite alternate linear;
+}
+
+@keyframes clouds-move {
+  from {transition: translate(10px, 18px);}
+  to {transform: translate(30px, 18px);}
+}
+
+.clouds {
+  animation: 30s clouds-move infinite alternate linear;
+}
+
+/* Border X get width  */
+div.borderXwidth a:before, div.borderXwidth a:after
+{
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 2px;
+    content: '';
+    background: #FFF;
+    transition: all 0.3s;
+}
+
+div.borderXwidth a:before
+{
+    left: 0px;
+    top: 0px;
+}
+
+div.borderXwidth a:after
+{
+    right: 0px;
+    bottom: 0px;
+}
+
+div.borderXwidth a:hover:before, div.borderXwidth a:hover:after
+{
+    opacity: 1;
+    width: 100%;
 }
 
