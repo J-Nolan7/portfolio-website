@@ -220,6 +220,14 @@ nav > ul > li > a:active {
   display: block;
 }
 
+.background-image {
+  background-image: url(../img/farm-to-table/tractor-in-field@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 .css-box-shadow {
   /* start ------------ */
   width: [object Object]px;
