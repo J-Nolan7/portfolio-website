@@ -8,7 +8,3 @@ function menuToggle() {
       x.className = 'navtoggle';
     }
 }
-
-#contact {
-    onclick="menuToggle()"
-}
