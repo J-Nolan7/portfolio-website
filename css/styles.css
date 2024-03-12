@@ -10,10 +10,9 @@ Darker Mauve (Active Hyperlinks): #9F33D1;
 
 header {
   background-color: rgb(26, 161, 199, 0.27);
-  padding: 35px 0;
+  padding: 10px 0 4px;
   margin: 10px;
   border-bottom: 3px solid #4a4a4a;
-  text-align: center;
   position: fixed;
   width: 100%;
 }
@@ -32,7 +31,7 @@ body {
 }
 
 main {
-  padding-top: 99px;
+  padding-top: 147.88px;
 }
 
 h1,
@@ -79,7 +78,7 @@ h1#heading {
 .logo {
   width: 90px;
   height: 50px;
-  max-width: 250px;
+  max-width: 150px;
 }
 
 .profile-pic {
@@ -181,11 +180,7 @@ a:active { /* selected link */
 nav > ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav > ul > li {
-  display: inline-block;
-  width: 100;
+  margin: 0;
 }
 
 nav > ul > li > a {
@@ -206,6 +201,41 @@ a:focus {
 
 nav > ul > li > a:active {
   color: #9f33d1;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 #hero {
@@ -253,12 +283,33 @@ nav > ul > li > a:active {
     margin-top: 4px;
   }
 
+  nav > ul > li {
+    display: inline-block;
+    width: 100;
+  }
+
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
   .col-md-6 {
     width: 50%;
   }
 
   #about-page h3 {
     margin-top: 0;
+  }
+
+  .logo {
+    max-width: 250px;
   }
 }
 
@@ -340,8 +391,7 @@ nav > ul > li > a:active {
 
 /* Border X get width  */
 div.borderXwidth a::before,
-div.borderXwidth a::after
-{
+div.borderXwidth a::after {
   position: absolute;
   opacity: 0;
   width: 0%;
@@ -351,22 +401,18 @@ div.borderXwidth a::after
   transition: all 0.3s;
 }
 
-div.borderXwidth a::before
-{
+div.borderXwidth a::before {
   left: 0;
   top: 0;
 }
 
-div.borderXwidth a::after
-{
+div.borderXwidth a::after {
   right: 0;
   bottom: 0;
 }
 
 div.borderXwidth a:hover::before,
-div.borderXwidth a:hover::after
-
-{
+div.borderXwidth a:hover::after {
   opacity: 1;
   width: 100%;
 }
