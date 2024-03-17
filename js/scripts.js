@@ -8,3 +8,5 @@ function menuToggle() {
       x.className = 'navtoggle';
     }
 }
+
+<i class="fa-solid fa-bars" style="color: #000000;"></i>
