@@ -388,32 +388,3 @@ nav > ul > li > a:active {
 .clouds {
   animation: 30s clouds-move infinite alternate linear;
 }
-
-/* Border X get width  */
-div.borderXwidth a::before,
-div.borderXwidth a::after {
-  position: absolute;
-  opacity: 0;
-  width: 0%;
-  height: 2px;
-  content: '';
-  background: #fff;
-  transition: all 0.3s;
-}
-
-div.borderXwidth a::before {
-  left: 0;
-  top: 0;
-}
-
-div.borderXwidth a::after {
-  right: 0;
-  bottom: 0;
-}
-
-div.borderXwidth a:hover::before,
-div.borderXwidth a:hover::after {
-  opacity: 1;
-  width: 100%;
-}
-
