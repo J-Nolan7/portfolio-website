@@ -169,6 +169,10 @@ a:active { /* selected link */
   text-align: center; /* Centers text */
 }
 
+#hero p {
+  text-align: center;
+}
+
 .center {
   text-align: center;
 }
