@@ -81,8 +81,8 @@ h1#heading {
 }
 
 .profile-pic {
-  height: 300;
-  width: 100;
+  height: 300px;
+  width: 100px;
 }
 
 /* links */
@@ -262,9 +262,7 @@ nav > ul > li > a:active {
 }
 
 .css-box-shadow {
-  /* start ------------ */
-  width: [object Object]px;
-  height: [object Object]px;
+  /* start ------------ */ /* width: [object object]px; height: [object object]px; */
   background: #f8f8f8;
   border: solid #bdbdbd 1px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
@@ -288,7 +286,7 @@ nav > ul > li > a:active {
 
   nav > ul > li {
     display: inline-block;
-    width: 100;
+    width: 100px;
   }
 
   nav > ul {
@@ -384,7 +382,7 @@ nav > ul > li > a:active {
 }
 
 @keyframes clouds-move {
-  from { transition: translate(10px, 18px); }
+  from { transform: translate(10px, 18px); }
   to { transform: translate(30px, 18px); }
 }
 
