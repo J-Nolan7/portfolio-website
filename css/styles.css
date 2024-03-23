@@ -1,7 +1,7 @@
 /*
 Colours used::
 Primary Colour (Teal): #1AA1C7 or RGB (26, 161, 199) or RGBa (26, 161, 199, 0.8) if 80% opacity;
-Secondary Colour (Dark Mauve): #AF55D8 or RGB (175, 85, 216);
+Secondary Colour (Dark Mauve): #AF55D8 or RGB (175, 85, 216); better accessibility mauve #AA4AD6
 Charcoal (Main Text/P): #595959;
 Light Grey (Accent Heading/Body Colour): #757575;
 Dark Teal (Visited Hyperlinks): #15809E;
@@ -12,7 +12,6 @@ header {
   background-color: rgb(26, 161, 199, 0.27);
   padding: 10px 0 4px;
   margin: 10px;
-  border-bottom: 3px solid #4a4a4a;
   position: fixed;
   width: 100%;
 }
@@ -88,7 +87,7 @@ h1#heading {
 
 /* links */
 a {
-  color: #1aa1c7;
+  color: #595959;
   text-decoration: none; /* No underlining */
 }
 
@@ -98,7 +97,7 @@ a:visited { /* visited link */
 
 a:hover,
 a:focus {
-  color: #af55d8;
+  color: #aa4ad6;
   text-decoration: underline; /* Underlining when hovering over a link or going over it with your keyboard */
 }
 
@@ -110,7 +109,7 @@ a:active { /* selected link */
 
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #1aa1c7;
+  background-color: #595959;
   color: #fff; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
@@ -135,13 +134,13 @@ a:active { /* selected link */
 
 .button.contact {
   background-color: transparent;
-  color: #1aa1c7;
+  color: #595959;
   text-transform: uppercase;
-  border: 2px solid #1aa1c7;
+  border: 2px solid #595959;
 }
 
 .button.contact:hover {
-  background-color: #1aa1c7;
+  background-color: #aa4ad6;
   color: #fff;
 }
 
@@ -200,7 +199,7 @@ nav > ul > li > a:visited {
 
 nav > ul > li > a:hover,
 a:focus {
-  color: #af55d8;
+  color: #aa4ad6;
 }
 
 nav > ul > li > a:active {
