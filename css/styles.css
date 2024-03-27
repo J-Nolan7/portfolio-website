@@ -112,8 +112,9 @@ a:active { /* selected link */
   background-color: #595959;
   color: #fff; /* needed to override the default link color */
   font-weight: 400;
-  padding: 10px;
-  border-radius: 3px;
+  padding: 10px 20px;
+  margin: 20px 0;
+  border-radius: 30px;
   border-bottom: 2px solid #595959; /* width of the border, type, color */
   opacity: 0.9; /* check if needed??? */
   transition: 0.2s opacity;
