@@ -12,7 +12,7 @@ header {
   background-color: rgb(26, 161, 199, 0.27);
   padding: 10px 0 4px;
   margin: 10px;
-  position: fixed;
+  position: static;
   width: 100%;
 }
 
