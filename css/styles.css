@@ -122,8 +122,10 @@ a:active { /* selected link */
 
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #595959;
-  color: #fff; /* needed to override the default link color */
+  background-color: transparent;
+  color: #595959; /* needed to override the default link color */
+  text-transform: uppercase;
+  border: 2px solid #595959;
   font-weight: 400;
   padding: 10px 20px;
   margin: 20px 0;
@@ -134,8 +136,8 @@ a:active { /* selected link */
 }
 
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
-  text-decoration: none;
+  background-color: #aa4ad6;
+  color: #fff;
 }
 
 .button:active {
