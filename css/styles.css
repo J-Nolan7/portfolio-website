@@ -358,6 +358,7 @@ form {
 
   .navtoggle li:not(:last-child) {
     display: inline-block;
+    margin: 25px 15px 0 0;
   }
 
   .navtoggle li:last-child {
