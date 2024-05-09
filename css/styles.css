@@ -329,6 +329,11 @@ input[type=submit]:hover {
   min-height: 100vh; /* vh stands for viewport height */
 }
 
+.link {
+  text-align: center;
+  text-decoration: underline;
+}
+
 form {
   width: 70%; /* adjust this value to control the form's width */
 }
