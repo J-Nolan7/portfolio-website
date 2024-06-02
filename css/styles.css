@@ -30,7 +30,7 @@ body {
 }
 
 main {
-  padding-top: 196.08px;
+  padding-top: 38.08px;
 }
 
 h1,
@@ -91,6 +91,8 @@ h1#heading {
   width: 90px;
   height: 50px;
   max-width: 150px;
+  display: inline-block;
+  text-align: center;
 }
 
 .profile-pic {
@@ -168,6 +170,7 @@ a:active { /* selected link */
 
 .container {
   padding: 0 15px;
+  width: 100%;
 }
 
 .row {
@@ -199,15 +202,25 @@ a:active { /* selected link */
 
 nav > ul {
   list-style-type: none;
-  padding: 0;
-  margin: 0;
+  padding: 10px;
+  margin: 0, auto;
+  text-align: center;
+  display: inline;
+  width: 100%;
+  line-height: 0px;
 }
 
 nav > ul > li > a {
-  padding: 0 15px;
+  padding: 0;
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
+  text-align: center;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 100%;
 }
 
 nav > ul > li > a:visited {
@@ -221,6 +234,14 @@ a:focus {
 
 nav > ul > li > a:active {
   color: #9f33d1;
+}
+
+#navigation {
+  text-align: center;
+  padding: 0;
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .navtoggle li:not(:last-child) {
@@ -291,7 +312,7 @@ nav > ul > li > a:active {
   text-align: center;
 }
 
-/* Style inputs with type="text", select elements and textareas */
+/* Style inputs with type="text", select elements and text areas */
 input[type=text], select, textarea {
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */ 
