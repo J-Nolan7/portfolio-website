@@ -17,29 +17,34 @@
   <!--START NAV-->
   <header>
 
-    <div id="container">
-      <div class="navtoggle" id="myNavtoggle">
-        <a href="index.html"><img class="logo" src="img/logo/JNtwinkle-whimsical.svg" alt="J Nolan UX UI Logo"></a>
+    <div class="navtoggle" id="myNavtoggle" onclick="toggleNavToggle(this)">
+      <a href="index.html"><img class="logo" src="img/logo/JNtwinkle-whimsical.svg" alt="J Nolan UX UI Logo"></a>
         <nav>
-          <ul class="navigation"> 
-            <li><a href="index.html">Projects</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html" on click="menuToggle() ">Contact</a></li>
-            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          <ul class="nav"> 
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Projects</a></li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a></li>
           </ul>
+          <div class="hamburger" onclick="toggleNavToggle(this)">
+            <i class="fa-solid fa-bars" style="color: #000000;"></i>
+          </div>
+          <!-- <i class="fa-solid fa-xmark" style="color: #000000;"></i> -->  
         </nav>
-      </div>
     </div>
 
-  </header>
+</header>
   <!--END NAV-->
 
   <!--START MAIN-->
   <main>
-    <div>
+    <div class="container">
         <h5>Would love to hear from you!</h5>
         <h6>Please drop me a line below.</h6>
     </div>
+    
     <div class="container2">
     <form action="action_page.php">
 
@@ -62,6 +67,7 @@
 
     </form>
     </div>
+    
   </main>
    <!--END MAIN-->
   
