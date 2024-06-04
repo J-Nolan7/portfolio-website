@@ -17,19 +17,23 @@
   <!--START NAV-->
   <header>
 
-    <div id="container">
-      <div class="navtoggle" id="myNavtoggle">
+      <div class="navtoggle" id="myNavtoggle" onclick="toggleNavToggle(this)">
         <a href="index.html"><img class="logo" src="img/logo/JNtwinkle-whimsical.svg" alt="J Nolan UX UI Logo"></a>
           <nav>
-            <ul class="navigation"> 
-              <li><a href="index.html">Projects</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html" on click="menuToggle() ">Contact</a></li>
-              <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+            <ul class="nav"> 
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Projects</a></li>
+              <li class="nav-item">
+                <a href="about.html" class="nav-link">About</a></li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
+            <div class="hamburger" onclick="toggleNavToggle(this)">
+              <i class="fa-solid fa-bars" style="color: #000000;"></i>
+            </div>
+            <!-- <i class="fa-solid fa-xmark" style="color: #000000;"></i> -->  
           </nav>
       </div>
-    </div>
 
   </header>
   <!--END NAV-->
@@ -40,7 +44,7 @@
     <!--START INTRO-->
   <div id="hero">
     <div class="container">
-      <h1 id="heading">Hi, I'm J.<br><span>A Sydney based UI Designer with UX and Frontend design skills.</span></h1>
+      <h1 id="heading">Hi, I'm J.<br><span>A Sydney based UI Designer with UX and Front-End design skills.</span></h1>
         <p>I am an analytical creative who is inspired by all forms of design and beauty and is driven by a passion of service to others. <br>This desire has lead me to want to craft digital experiences for users, that are not only intuitive and innovative but also beautiful.
         </p>
     </div>
@@ -51,8 +55,8 @@
   <div id="#work">
     <div class="container">
       <h2>My Projects</h2>
-        <div class="row"></div>
     </div>
+    
       <!--START PROJECT 1-->
       <div class="container">
         <div class="row">
@@ -60,7 +64,7 @@
             <h3>Farm To Table</h3>
               <p>We wanted to bridge the gap of a lack of accessibility of farm fresh produce to families, by creating an e-commerce store that delivered straight to their door. Hence, Farm to Table, a responsive mobile web app was born.
               </p>
-              <ul>
+              <ul id="list">
                 <li> Timeline: 2 weeks </li>
                 <li> Utilised Figma, Miro, Mockup and Lyssna </li>
                 <li> Built User stories and flows </li>
@@ -71,7 +75,7 @@
             <a href="farm-to-table.html" class="button">View Case Study</a>
           </div>
         
-          <div class="col-md-6 col-lg-7">
+          <div class="col-md-6 col-lg-7" id="thumnail">
             <picture> <source srcset="img/farm-to-table/ftt-thumb3@1x.png" media="(max-width:767px)">
               <a href="farm-to-table.html"><img src="img/farm-to-table/ftt-thumb3@2x.png" alt="Farm scenery mobile device screens"></a>
             </picture>
@@ -92,7 +96,7 @@
               <p>
                 Restore is a native app that was created to encourage users to prioritise their well-being, by adopting mindfulness, to reduce stress in their daily lives.
               </p>
-              <ul>
+              <ul id="list2">
                 <li> Timeline: 3 weeks </li>
                 <li> Employed the use of Figma and Miro </li>
                 <li> Performed competitive analysis </li>
@@ -124,7 +128,7 @@
             <p> 
               Nourish Ninja was developed to promote fast, healthy and delicious meals for time poor cooks. 
             </p>
-            <ul>
+            <ul id="list3">
               <li> Timeline: 11 weeks </li>
               <li> Utilised Figma, Miro and Prott to inform the design </li>
               <li> Performed a SWOT analysis </li>
@@ -159,7 +163,7 @@
             <p>
               We created a mobile music app, Groovify, to transport users back to the legendary hits of the 80’s.
             </p>
-            <ul>
+            <ul id ="list4">
               <li> Timeline: 5 weeks </li>
               <li> Employed Figma and Mockup </li>
               <li> Performed competitive analysis </li>
@@ -185,40 +189,40 @@
   <!--END PROJECT 4-->
 
   <!--START PROJECT 5-->
-  <div class="container">
+    <div class="container">
 
-    <div class="row">
+      <div class="row">
         <div class="col-md-6 col-lg-5">
-        <h3>Responsive Portfolio Site</h3>
-        <p>An online platform was required to be able to showcase my design work on, for future collaborative opportunities.
-        </p>
-        <ul>
-          <li> Timeline: 12 weeks </li>
-          <li> Employed Figma, VSCode and GitHub </li>
-          <li> Developed user research </li>
-          <li> Defined a style guide </li>
-          <li> Performed front-end development using HTML, CSS and JavaScript </li>
-          <li> Utilised usability testing </li>
-          <li> Employed code validation and cross-browser testing </li>
-          <li> Launched a responsive design </li>
-        </ul>
-        <a href="responsive-portfolio.html" class="button">View Case Study</a>
+          <h3>Responsive Portfolio Site</h3>
+          <p>An online platform was required to be able to showcase my design work on, for future collaborative opportunities.
+          </p>
+          <ul id="list5">
+            <li> Timeline: 12 weeks </li>
+            <li> Employed Figma, VSCode and GitHub </li>
+            <li> Developed user research </li>
+            <li> Defined a style guide </li>
+            <li> Performed front-end development using HTML, CSS and JavaScript </li>
+            <li> Utilised usability testing </li>
+            <li> Employed code validation and cross-browser testing </li>
+            <li> Launched a responsive design </li>
+          </ul>
+          <a href="responsive-portfolio.html" class="button">View Case Study</a>
         </div>
 
         <div class="col-md-6 col-lg-7">
-        <picture>
-          <source srcset="img/responsive-portfolio/rpw-thumb@1x.png" media="(max-width:767px)">
-          <a href="responsive-portfolio.html"><img src="img/responsive-portfolio/rpw-thumb@2x.png" alt="Mobile and laptop screens showcasing portfolio design"></a>
-        </picture>
+          <picture>
+            <source srcset="img/responsive-portfolio/rpw-thumb@1x.png" media="(max-width:767px)">
+            <a href="responsive-portfolio.html"><img src="img/responsive-portfolio/rpw-thumb@2x.png" alt="Mobile and laptop screens showcasing portfolio design"></a>
+          </picture>
         </div>
-    </div>
+      </div>
     
-  </div>
+    </div>
   <!--END PROJECT 5-->
 
   <!--START ANIMATION-->
 
-  <div class="container">
+  <div class="container" id="work">
 
     <div class="row">
       <div class="col-md-6 col-lg-5">
