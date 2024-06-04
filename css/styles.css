@@ -212,7 +212,7 @@ a:active { /* selected link */
 }
 
 #thumbnail {
-  padding: 35px;
+  padding-bottom: 35px;
 }
 
 #hero h1 {
@@ -507,6 +507,10 @@ form {
     padding-bottom: 20px;
   }
 
+  #thumbnail {
+    padding-bottom: 35px;
+    padding-top: 50px;
+  }  
 }
 
 @media screen and (min-width: 1024px) {
