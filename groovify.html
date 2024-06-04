@@ -17,22 +17,25 @@
   <!--START NAV-->
   <header>
 
-    <div id="header" class="container">
-      <div class="navtoggle" id="myNavtoggle">
-        <a href="index.html"><img class="logo" src="img/logo/JNtwinkle-whimsical.svg" alt="J Nolan UX UI Logo"></a>
-        <a href="index.html"></a>
-      <nav>
-        <ul class="navigation"> 
-          <li><a href="index.html">Projects</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html" onclick="menuToggle() " >Contact</a></li>
-          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-        </ul>
-      </nav>
-      </div>
+    <div class="navtoggle" id="myNavtoggle" onclick="toggleNavToggle(this)">
+      <a href="index.html"><img class="logo" src="img/logo/JNtwinkle-whimsical.svg" alt="J Nolan UX UI Logo"></a>
+        <nav>
+          <ul class="nav"> 
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Projects</a></li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+          <div class="hamburger" onclick="toggleNavToggle(this)">
+            <i class="fa-solid fa-bars" style="color: #000000;"></i>
+          </div>
+          <!-- <i class="fa-solid fa-xmark" style="color: #000000;"></i> -->  
+        </nav>
     </div>
 
-  </header>
+</header>
   <!--END NAV-->
 
   <!--START MAIN-->
@@ -40,14 +43,14 @@
     <div class="container">
         <h1>Groovify 80's Mobile Music App</h1>
         <picture>
-            <source srcset="img/groovify/hero@1x.png" media="(max-width:767px)">
-            <img src="img/groovify/hero@2x.png" alt="Music app mobile device screens">
+            <source srcset="img/groovify/groovify-thumb2@1x.png" media="(max-width:767px)">
+            <img src="img/groovify/groovify-thumb2@2x.png" alt="Music app mobile device screens">
         </picture>
     </div>
     <div class="container">
         <picture>
-            <source srcset="img/groovify/row@1.jpg" media="(max-width:767px)">
-            <img src="img/groovify/Row@2x.jpg" alt="Project details">
+            <source srcset="img/groovify/Row@1x.png" media="(max-width:767px)">
+            <img src="img/groovify/Row@2x.png" alt="Project details">
         </picture>  
     </div>
    
@@ -91,12 +94,12 @@
     <h2>The Design Process</h2>
       <p>We adopted the Design Thinking Process, in order to a develop a user-centric solution to the problem.</p>
       <picture>
-        <source srcset="img/groovify/Step@1x.png" media="(max-width:767px)">
-        <img src="img/groovify/Step@2x.png" alt="Discover and ideate phase of design process">
+        <source srcset="img/groovify/step1@1x.png" media="(max-width:767px)">
+        <img src="img/groovify/step1@2x.png" alt="Discover and ideate phase of design process">
       </picture>
       <picture>
-        <source srcset="img/groovify/Step@2x.png" media="(max-width:767px)">
-        <img src="img/groovify/Step2@2x.png" alt="Design and reflection phase of design process">
+        <source srcset="img/groovify/step3@1x.png" media="(max-width:767px)">
+        <img src="img/groovify/step3@2x.png" alt="Design and reflection phase of design process">
       </picture>
       <picture>
         <source srcset="img/groovify/lady@1x.jpg" media="(max-width:767px)">
