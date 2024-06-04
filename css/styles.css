@@ -8,16 +8,19 @@ Dark Teal (Visited Hyperlinks): #15809E;
 Darker Mauve (Active Hyperlinks): #9F33D1;
 */
 
-header {
-  background-color: rgb(26, 161, 199, 0.27);
-  padding: 10px 0 4px;
-  margin: 10px;
-  position: static;
-  width: 100%;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-* {
-  box-sizing: border-box;
+header {
+  background-color: rgb(26, 161, 199, 0.27);
+  display: flex;
+  padding: 0 30px;
+  height: 70px;
+  justify-content: space-between;
+  width: 100%;
 }
 
 body {
@@ -30,7 +33,7 @@ body {
 }
 
 main {
-  padding-top: 38.08px;
+  padding-top: 23.7px;
 }
 
 h1,
@@ -48,6 +51,8 @@ h1 {
 h2 {
   font-size: 2.25em;
   font-weight: 700;
+  padding-bottom: 0;
+  padding-top: 0;
 }
 
 h3 {
@@ -93,18 +98,36 @@ h1#heading {
   max-width: 150px;
   display: inline-block;
   text-align: center;
+  align-items: center;
   padding-left: 15px;
 }
 
 .profile-pic {
   height: 300px;
   width: 100px;
+  padding-top: 10px;
+}
+
+.bio {
+  padding-bottom: 20px;
+  padding-top: 30px;
+}
+
+.bio2 {
+  padding-bottom: 20px;
+  padding-top: 30px;
+}
+
+
+.skills {
+  line-height: 2;
 }
 
 /* links */
 a {
   color: #595959;
   text-decoration: none; /* No underlining */
+  transition: all 0.4s ease-in-out;
 }
 
 a:visited { /* visited link */
@@ -114,7 +137,6 @@ a:visited { /* visited link */
 a:hover,
 a:focus {
   color: #aa4ad6;
-  text-decoration: underline; /* Underlining when hovering over a link or going over it with your keyboard */
 }
 
 a:active { /* selected link */
@@ -134,8 +156,8 @@ a:active { /* selected link */
   margin: 20px 0;
   border-radius: 30px;
   border-bottom: 2px solid #595959; /* width of the border, type, color */
-  opacity: 0.9; /* check if needed??? */
-  transition: 0.2s opacity;
+  opacity: 0.9;
+  transition: all 0.3s ease opacity;
 }
 
 .button:hover {
@@ -156,6 +178,7 @@ a:active { /* selected link */
   color: #595959;
   text-transform: uppercase;
   border: 2px solid #595959;
+  transition: all 0.3s ease-in-out;
 }
 
 .button.contact:hover {
@@ -170,7 +193,7 @@ a:active { /* selected link */
 /* Layout styling */
 
 .container {
-  padding: 0 15px;
+  padding: 10px 15px;
   width: 100%;
 }
 
@@ -184,6 +207,14 @@ a:active { /* selected link */
   color: #595959;
 }
 
+#work {
+  padding-bottom: 20px;
+}
+
+#thumbnail {
+  padding: 35px;
+}
+
 #hero h1 {
   text-align: center; /* Centers text */
 }
@@ -192,34 +223,49 @@ a:active { /* selected link */
   text-align: center;
 }
 
+#list {
+ padding-left: 15px; 
+ padding-top: 10px;
+}
+
+#list2 {
+  padding-left: 15px; 
+  padding-top: 10px;
+}
+
+#list3 {
+  padding-left: 15px; 
+  padding-top: 10px;
+}
+
+#list4 {
+  padding-left: 15px; 
+  padding-top: 10px;
+}
+
+#list5 {
+  padding-left: 15px; 
+  padding-top: 10px;
+}
+
 .center {
   text-align: center;
 }
 
 #header header {
   text-align: center;
-  padding: 10px 0 10px;
+  padding: 10px;
 }
 
 nav > ul {
   list-style-type: none;
-  padding: 10px;
-  margin: 0, auto;
-  display: inline;
-  width: 100%;
-  line-height: 0px;
-}
-
-nav > ul > li > a {
   padding: 0;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #4a4a4a;
-  text-align: center;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  margin: 0 auto;
+  height: 100%;
   width: 100%;
 }
 
@@ -236,51 +282,67 @@ nav > ul > li > a:active {
   color: #9f33d1;
 }
 
-#navigation {
+.nav {
+  display: flex;
+  column-gap: 40px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav > ul > li > a {
   padding: 0;
-  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  color: #4a4a4a;
+  text-align: center;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
   margin: 0 auto;
   width: 100%;
 }
 
-.navtoggle li:not(:last-child) {
+.navtoggle {
+  min-height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.nav-link {
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #aa4ad6;
+}
+
+.nav-link :visited {
+  color: #1aa1c7;
+}
+
+.nav-link :active {
+  color: #9f33d1;
+}
+
+.hamburger i{
+  color: rgba(0, 0, 0, 0.2)
+  font-size 25px;
+  line-height: 70px;
+  margin-left: 50px;
   display: none;
-}
-
-.navtoggle,
-.navtoggle.responsive {
-  position: relative;
-}
-
-.navtoggle li .icon {
-  position: absolute;
-  right: 0;
-  top: 2px;
-  font-size: 20px;
-  padding-right: 0;
-}
-
-.navtoggle.responsive li {
-  display: block;
-}
-
-.navtoggle.responsive nav {
-  padding: 24px 0 0;
-}
-
-.navtoggle.responsive li {
-  display: block;
-  padding: 10px 0;
-  border-top: 1px solid rgba(255, 127, 80, 0.5);
-}
-
-.navtoggle.responsive li:last-child {
-  padding: 0 0 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 #hero {
   background-color: rgb(222, 193, 236, 0.36);
-  margin: 10px;
+  margin: 10px 0;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -311,6 +373,9 @@ nav > ul > li > a:active {
   text-align: center;
 }
 
+
+/* Contact form styling */ 
+
 /* Style inputs with type="text", select elements and text areas */
 input[type=text], select, textarea {
   width: 100%; /* Full width */
@@ -336,6 +401,7 @@ input[type=submit] {
 /* When moving the mouse over the submit button, add a mauve color */
 input[type=submit]:hover {
   background-color: #aa4ad6; 
+  transition: all 0.3s ease-in-out;
 }
 
 /* Add a background color and some padding around the form */
@@ -351,47 +417,83 @@ input[type=submit]:hover {
 
 .link {
   text-align: center;
-  text-decoration: underline;
+  align-items: center;
 }
 
 form {
   width: 70%; /* adjust this value to control the form's width */
 }
 
+
 /* media queries */
 
-@media only screen and (min-width: 640px) {
+@media only screen and (max-width: 640px) {
   header {
     text-align: unset;
-    padding: 20px 0 13px;
+    padding: 15px 0 13px;
   }
 
-  nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
+  .hamburger i{
+    display: block;
+    padding-bottom: 38px;
+    align-items: center;
   }
 
-  nav > ul > li {
-    display: inline-block;
-    width: 100px;
+  .nav {
+    position: fixed;
+    left: 0;
+    top: 70px;
+    gap: 0;
+    row-gap: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px, 0, 25px;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    transform: translateX(-100%);
+    transition: all 0.3s ease-in-out;
   }
 
-  nav > ul {
+  .hamburger li {
+    position: fixed;
+    left: 0;
+    top: 70px;
+    gap: 0;
+    row-gap: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    transform: translateX(-100%);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-item {
+    flex-direction: column;
     margin: 1em 0;
   }
 
-  .navtoggle li:not(:last-child) {
-    display: inline-block;
-    margin: 25px 15px 0 0;
+  .nav.active {
+    left: 0;
+    position: fixed;
+    top: 70px;
+    gap: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    transform: translate(0);
+    transition: 0.3s ease-in-out;
   }
 
-  .navtoggle li:last-child {
-    display: none;
-  }
-
-  .col-md-6 {
-    width: 50%;
+  .nav-link {
+    font-size: 14px;
   }
 
   #about-page h3 {
@@ -400,12 +502,20 @@ form {
 
   .logo {
     max-width: 250px;
+    align-items: center;
+    max-height: 50px;
+    padding-bottom: 20px;
   }
+
 }
 
 @media screen and (min-width: 1024px) {
   .col-lg-7 {
     width: 58.33%;
+  }
+
+  .col-md-6 {
+    width: 50%;
   }
 
   .col-lg-5 {
