@@ -1,15 +1,15 @@
 console.log("Hi, welcome to my Portfolio site!"); 
 
-function menuToggle() {
-  var x = document.getElementById('myNavtoggle');
-  if (x.className === 'navtoggle') {
-    x.className += ' responsive';
-  } else {
-    x.className = 'navtoggle';
-    }
-}
+const nav = document.querySelector(".nav");
+const hamburger = document.querySelector(".fa-bars");
 
-<i class="fa-solid fa-bars" style="color: #000000;"></i>
+hamburger.addEventListener("click", () => {
+  nav.classList.toggle("active");
+  hamburger.classList.toggle("fa-xmark");
+});
 
-
+nav.addEventListener("click", () => {
+  nav.classList.remove("active");
+  hamburger.classList.remove("fa-xmark");
+})
 
