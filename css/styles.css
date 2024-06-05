@@ -535,6 +535,11 @@ form {
   #thumbnail6 {
     padding-top: 30px;
   }
+
+  #about {
+    padding-bottom: 0;
+  }
+   
 }
 
 @media screen and (min-width: 1024px) {
