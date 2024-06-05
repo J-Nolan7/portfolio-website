@@ -508,9 +508,33 @@ form {
   }
 
   #thumbnail {
-    padding-bottom: 35px;
-    padding-top: 50px;
-  }  
+    padding-bottom: 0;
+    padding-top: 10px;
+  }
+  
+  #thumbnail2 {
+    padding-bottom: 0;
+    padding-top: 10px;
+  } 
+
+  #thumbnail3 {
+    padding-bottom: 0;
+    padding-top: 15px;
+  } 
+
+  #thumbnail4 {
+    padding-bottom: 0;
+    padding-top: 15px;
+  } 
+
+  #thumbnail5 {
+    padding-bottom: 0;
+    padding-top: 15px;
+  } 
+
+  #thumbnail6 {
+    padding-top: 30px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
