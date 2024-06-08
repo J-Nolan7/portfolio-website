@@ -23,6 +23,37 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
+
+<!--create hamburger menu from scratch in html below, then style in css -->
+        <div class="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+
+<!--    css
+        .bar {
+          height: 2px;
+          width: 27px;
+          background: #fff;
+          margin: 5px 0;
+          opacity: 0.8;
+          transition: all 0.3s ease-in-out;
+        }
+
+        .hamburger--open .bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger--open .bar:nth-child(2) {
+  opacity: 0;  
+}
+
+.hamburger--open .bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);  
+}   
+      -->
+  
         <!--END NAV-->
       </div>
     </header> 
@@ -160,6 +191,10 @@ nav {
     width: auto;
     float: right;
     margin-top: 4px;
+  }
+
+  .nav {
+    padding: 10px, 0, 25px;
   }
 
   .navtoggle li:not(:last-child) {

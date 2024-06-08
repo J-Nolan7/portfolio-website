@@ -11,5 +11,5 @@ hamburger.addEventListener("click", () => {
 nav.addEventListener("click", () => {
   nav.classList.remove("active");
   hamburger.classList.remove("fa-xmark");
-})
+});
 
