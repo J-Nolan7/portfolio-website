@@ -248,6 +248,134 @@ a:active { /* selected link */
   padding-top: 10px;
 }
 
+#process {
+  padding-top: 20px;
+}
+
+#process2 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#process3 {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+#process4 {
+  padding-top: 20px;
+}
+
+#process5 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#example {
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+#example2 {
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+#example3 {
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+#example4 {
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+#example5 {
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+#example6 {
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+#style {
+  padding-top: 15px;
+}
+
+#style2 {
+  padding-top: 15px;
+}
+
+#style2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#code {
+  padding-top: 30px;
+}
+
+#findings {
+  padding: 0 15px;
+}
+
+#findings2 {
+  padding: 0 15px;
+}
+
+#findings3 {
+  padding: 0 15px;
+}
+
+#findings4 {
+  padding: 0 15px;
+}
+
+#findings5 {
+  padding: 0 15px;
+}
+
+#designs {
+  padding-top: 30px;
+}
+
+#designs2 {
+  padding-top: 30px;
+}
+
+#mockup {
+  padding-top: 30px;
+}
+
+#mockup2 {
+  padding-top: 40px;
+}
+
+#records {
+  padding-top: 30px;
+}
+
+#home {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#home2 {
+  padding-bottom: 30px;
+}
+
+#home3 {
+  padding-top: 30px;
+}
+
+#gap {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
 .center {
   text-align: center;
 }
